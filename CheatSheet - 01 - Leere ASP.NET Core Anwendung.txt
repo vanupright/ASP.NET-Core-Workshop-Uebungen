@@ -1,0 +1,6 @@
+1. Neues Projekt Anlegen
+2. ASP.NET Core Web App als Template verwenden
+3. Aktuellstes Framework auswählen (hier .NET Core 1.1)
+4. Projektnamen eingeben
+5. Projekt wird erstellt
+6. Wird das Projekt nun ausgeführt, wird der Browser geöffnet und die Beispielanwendung angezeigt. Alternativ einfach im Browser "localhost:5000" aufrufen.
