@@ -1,0 +1,5 @@
+1. Neuen Controller aus Template (MVC Controller Class) im Controller-Ordner des Projektes erstellen, z.B. BookController.
+2. In der Controller Klasse eine neue public Methode mit dem Rückgabetypen List<String> einfügen, z.B. Books
+3. Liste anlegen + befüllen
+4. Programm starten
+5. Im Browser "localhost:5000/Book/Books" aufrufen
