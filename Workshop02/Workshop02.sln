@@ -1,7 +1,9 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop02", "Workshop02\Workshop02.csproj", "{59468602-C91A-450A-9956-F10D1205646A}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop02", "Workshop02\Workshop02.csproj", "{20DF0430-558D-4FF2-8A67-919AFCAE0E16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{59468602-C91A-450A-9956-F10D1205646A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59468602-C91A-450A-9956-F10D1205646A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59468602-C91A-450A-9956-F10D1205646A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59468602-C91A-450A-9956-F10D1205646A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20DF0430-558D-4FF2-8A67-919AFCAE0E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20DF0430-558D-4FF2-8A67-919AFCAE0E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20DF0430-558D-4FF2-8A67-919AFCAE0E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20DF0430-558D-4FF2-8A67-919AFCAE0E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8A4A5FC-81FF-4729-A08D-1EA0475B7E9E}
 	EndGlobalSection
 EndGlobal

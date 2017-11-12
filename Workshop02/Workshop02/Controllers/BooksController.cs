@@ -8,16 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Workshop02.Controllers
 {
-    public class BookController : Controller
+    public class BooksController : Controller
     {
 		// GET: /<controller>/
-		public IActionResult Index()
+		public List<String> Index()
 		{
-			return View();
-		}
-
-        public List<String> Books()
-        {
             List<String> BookList = new List<String>();
             BookList.Add("Der Herr der Ringe - Die Gefährten, J. R. R. Tolkien");
             BookList.Add("Der Herr der Ringe - Die zwei Türme, J. R. R. Tolkien");
