@@ -1,0 +1,6 @@
+﻿1. Klasse für ein Buch erstellen mit Attributen (z.B. Name, Author)
+2. Klasse für einen BookStore erstellen (Bücher hinzufügen, auflisten, ggf. zählen)
+3. Passendes Interface für den BookStore erstellen
+4. Das Interface in den BooksController einfügen und mit Büchern befüllen
+5. In der Startup.cs den BookStore-Service anbieten (services.AddScoped<IBookStore, BookStore>();)
+6. Funktion mit localhost:5000/books/ überprüfen
