@@ -14,9 +14,6 @@ namespace Workshop04.Models
             Name = name;
             Author = author;
         }
-        private Book()
-        {
-        }
 
         public override string ToString()
         {

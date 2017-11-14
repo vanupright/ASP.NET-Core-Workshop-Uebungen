@@ -8,7 +8,7 @@ namespace Workshop04.Models
 {
     public class BookStore : IBookStore
     {
-        private List<Book> _listBook;
+        private readonly List<Book> _listBook;
 
         public BookStore()
         {
@@ -27,6 +27,11 @@ namespace Workshop04.Models
         public int CountAll()
         {
             return _listBook.Count();
+        }
+
+        public Book GetByName(string bookTitle)
+        {
+            return _listBook.FirstOrDefault(book => book.Name == bookTitle);
         }
     }
 }

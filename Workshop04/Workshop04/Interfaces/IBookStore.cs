@@ -11,5 +11,6 @@ namespace Workshop04.Interfaces
         List<Book> ListAll();
         void Add(Book book);
         int CountAll();
+        Book GetByName(string bookTitle);
     }
 }

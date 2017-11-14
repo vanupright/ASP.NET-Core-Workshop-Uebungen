@@ -10,20 +10,22 @@ using Workshop04.Models;
 
 namespace Workshop04.Controllers
 {
-    //[Route("api/[controller]")]
+    [Route("api/[controller]")]
     public class BooksController : Controller
     {
-        private IBookStore _bookStore = new BookStore();
+        private readonly IBookStore _bookStore;
 
-        public void BookStore(IBookStore bookStore)
+        public BooksController(IBookStore bookStore)
         {
             _bookStore = bookStore;
+            BuyBooksOnOpening();
         }
 
         // GET: /<controller>/
+        [HttpGet]
 		public List<Book> Index()
 		{
-            BuyBooksOnOpening();
+            
             return _bookStore.ListAll();
         }
 
@@ -38,10 +40,10 @@ namespace Workshop04.Controllers
         }
 
         [HttpPost]
-        public string AddBook(Book book)
+        public List<Book> AddBook([FromBody]Book book)
         {
-            //_bookStore.Add(book);
-            return book.ToString();
+            _bookStore.Add(book);
+            return _bookStore.ListAll();
         }
     }
 }
