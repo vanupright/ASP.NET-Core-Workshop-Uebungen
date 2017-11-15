@@ -35,7 +35,7 @@ namespace Workshop.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<Book> AddBook([FromBody]Book book)
+        public IEnumerable<Book> AddBook([FromBody] Book book)
         {
             _bookStore.Add(book);
             return _bookStore.ListAll();

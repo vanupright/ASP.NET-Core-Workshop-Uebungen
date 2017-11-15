@@ -27,7 +27,7 @@ namespace Workshop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseInMemoryDatabase()
+            options.UseSqlite("Data Source=Books.db")
             );
             services.AddScoped<IBookStore, BookStore>();
 

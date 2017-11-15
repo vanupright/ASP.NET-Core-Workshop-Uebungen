@@ -13,6 +13,7 @@ namespace Workshop.Models
         {
             Name = name;
             Author = author;
+            Id = Guid.NewGuid();
         }
 
         public Book()
@@ -26,8 +27,8 @@ namespace Workshop.Models
         }
 
         [Key]
-        public Guid Id { get; private set; } = Guid.NewGuid();
-        public string Name { get; private set; } = String.Empty;
-        public string Author { get; private set; } = String.Empty;
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Author { get; set; }
     }
 }
